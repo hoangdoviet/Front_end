@@ -1,0 +1,265 @@
+
+body {
+    font-family: roboto;
+    margin: 0px;
+    padding: 0px;
+
+}
+a{
+    text-decoration: none;
+
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+ul li {
+    list-style: none;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+
+}
+/* =========News======= */
+
+.news{
+    background: linear-gradient(100.02deg, #D8E0FE -11.58%, #E8F1FC 33.43%, #F5F5F5 86.91%);
+    padding-bottom: 26px;
+    max-width: 100%;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    column-gap: 24px;
+    margin-top: 24px;
+    margin-right: 124px;
+    margin-left: 125px;
+}
+/*LEFT*/
+.news_left{
+    padding-top: 24px;
+}
+/* figure */
+figure{
+    margin: 0 0 10px;
+}
+.news_main_img {
+    width: 100%;
+    position: relative;
+}
+
+/* main info*/
+
+.news_main_info{
+    display: flex;
+    margin: 0;
+}
+.news_main_info p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6D6969;
+}
+.news_tags{
+    display: flex;
+    margin: 0;
+    color: #6D6969;
+}
+.news_tags::before{
+    content: url(/img/Ellipse_1.png);   
+    padding-right: 5px;
+}
+.news_main_info .news_times {
+    margin-left: 378px;
+}
+.news_times{
+    margin: 0;
+    display: flex;
+    color: #6D6969;
+}
+.news_times::before{
+   content: url(/img/clock.png);
+   padding-right: 5px;
+}
+
+.news_ttl{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+    padding: 9px 0;
+    display: inline-block;
+}
+/* RIGHT */
+.news_right{
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap: 24px;
+
+}
+/* Search News*/
+.multisearch{
+    padding: 25px 0;
+    
+}
+.search_form{
+    border: 1px solid #c4c4c4;
+    margin-right: 124px;
+    margin-left: 125px;
+}
+.search_wrap{
+    display: flex;
+    align-items: center;
+
+}
+.item {
+    border-right: 1px solid #c4c4c4;
+    position: relative;
+    text-align: center;
+    padding-top: 13px;
+    width: 220px;
+    height: 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+}
+.item_tags{
+    width: 150px;
+}
+.item_result{
+    border-right: none;
+    min-width: 115px;
+
+}
+.item_search{
+    width: 100%;
+    border-right: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.item__input{
+    outline: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    border: none;
+    margin-top: 4px;
+
+   
+}
+
+.search_input{
+    outline: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    border: none;
+    margin-top: 4px;
+
+}
+.search_input::placeholder{
+    color: #CCCCCC;
+}
+.item_search .submit_search{
+    background: 0 0;
+    border: 0;
+    margin-top: 5px;
+
+}
+.item__tag::after , .item__cap::after {
+    content: "";
+    background: url(../img/list.png) no-repeat;
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    right: 0;
+    top: 50%;
+    transform: translate(-20%,-40%);
+}
+.item-check {
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    z-index: 2;
+    width: 400px;
+    left: -1px;
+    padding: 1rem;
+    border: 1px solid #c4c4c4;
+}
+.item__list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+li, ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item__list li {
+    display: flex;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.item__list li label {
+    margin-left: .5rem;
+    line-height: 1;
+    display: inline-block;
+ 
+}
+.item__list > li > a{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-decoration: underline;
+    color: #0D3982;
+}
+.button_check{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    display: flex;
+}
+/*LIST NEWS*/
+.listnews{
+    padding: 0;
+    margin: 0;
+}
+.listnews .row{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap: 24px;
+
+}
+.listnews .news_times{
+    padding: 0;
+    margin-left: 182px;
+
+}
+.spinner{
+    text-align: center;
+    padding-top: 20px;
+    
+}
